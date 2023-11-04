@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sun {
+    @apply stroke-rust-grey transition-all;
+}
+.moon {
+    @apply stroke-transparent transition-all;
+}
+
+.dark .sun {
+  @apply stroke-transparent;
+}
+.dark .moon {
+  @apply stroke-willow-grey;
+}
+
+#themeToggle:hover .sun {
+  @apply stroke-zinc-800;
+}
+#themeToggle:hover .moon {
+  @apply stroke-transparent;
+}
+
+.dark #themeToggle:hover .sun {
+  @apply stroke-transparent;
+}
+.dark #themeToggle:hover .moon {
+  @apply stroke-zinc-200;
+}

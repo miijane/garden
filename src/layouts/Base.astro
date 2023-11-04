@@ -1,11 +1,15 @@
 ---
 import Head from "@components/meta/Head.astro";
+import Navbar from "@components/Navbar.astro";
 import garden from "@constants/garden.json"
+import "../styles/global.css"
+
 ---
 
 <html lang="en">
     <Head title={garden.site.title}/>
-    <body>
+    <body class="bg-slate-50 text-rust-grey dark:bg-rust-grey dark:text-willow-grey font-epiloge">
+        <Navbar/>
         <slot/>
     </body>
 </html>

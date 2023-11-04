@@ -1,0 +1,17 @@
+{
+    "main": [
+        {
+            "title": "Now",
+            "href": "/now"
+        },
+        {
+            "title": "Blog",
+            "href": "/blog"
+        },
+        {
+            "title": "Library",
+            "href": "/library"
+        }
+    ],
+    "github": "https://www.github.com/miijane"
+}

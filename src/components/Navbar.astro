@@ -1,0 +1,37 @@
+---
+import garden from "@constants/garden.json"
+import links from "@constants/links.json"
+
+import ToggleTheme from "@components/ToggleTheme.astro"
+import GithubIcon from "./icons/GithubIcon.astro";
+
+export interface NavLink {
+    title: string;
+    href: string;
+}
+
+const navLinks: NavLink[] = links.main
+---
+
+<header class="max-w-full">
+    <div class="flex justify-between mx-auto max-w-screen-xl px-3 py-7">
+        <a href="#">
+            <span class="text-2xl font-bold">MIJANE_</span>
+        </a>
+        <div class="flex gap-3 content-center">
+            {
+                navLinks?.map((link) => (
+                    <a href={link.href} class="hover:underline">{link.title}</a>
+                ))
+            }
+            <a href={links.github} target="_blank">
+                <div>
+                    <GithubIcon/>
+                </div>
+            </a>
+            <div>    
+                <ToggleTheme/>
+            </div>
+        </div>
+    </div>
+</header>
