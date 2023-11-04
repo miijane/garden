@@ -1,0 +1,11 @@
+---
+import Head from "@components/meta/Head.astro";
+import garden from "@constants/garden.json"
+---
+
+<html lang="en">
+    <Head title={garden.site.title}/>
+    <body>
+        <slot/>
+    </body>
+</html>
