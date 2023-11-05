@@ -29,3 +29,8 @@
 .dark #themeToggle:hover .moon {
   @apply stroke-zinc-200;
 }
+
+
+.container {
+  @apply max-w-screen-xl;
+}
