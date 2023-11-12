@@ -1,6 +1,7 @@
 ---
 import Head from "@components/meta/Head.astro";
 import Navbar from "@components/Navbar.astro";
+import Footer from "@components/Footer.astro";
 import garden from "@constants/garden.json"
 import "../styles/global.css"
 
@@ -13,5 +14,6 @@ import "../styles/global.css"
         <div id="container">
             <slot/>
         </div>
+        <Footer>
     </body>
 </html>

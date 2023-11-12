@@ -16,7 +16,8 @@ const library = defineCollection({
         title: z.string(),
         author: z.string(),
         rating: z.number(),
-        finished: z.boolean()
+        finished: z.boolean(),
+        cover: z.string()
     })
 })
 

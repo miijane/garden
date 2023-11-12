@@ -3,6 +3,7 @@ title: Zero to One
 author: Peter Thiel
 rating: 4
 finished: true 
+cover: https://cdn.kobo.com/book-images/8ac7fd3a-b91f-4ed2-9633-3b46efe99905/1200/1200/False/zero-to-one-2.jpg
 ---
 
 ![Book Cover](https://cdn.kobo.com/book-images/8ac7fd3a-b91f-4ed2-9633-3b46efe99905/1200/1200/False/zero-to-one-2.jpg)

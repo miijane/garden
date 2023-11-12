@@ -7,13 +7,18 @@ const books = await getCollection('library')
 ---
 
 <Contents title="LIBRARY">
+        <ul class=" list-none grid grid-cols-3 md:grid-cols-3">
         {
             books.map(book => (
                 <li>
-                    <a href={book.slug}>
-                        {book.data.title}    
+                    <a href={""} class="flex flex-col outline-2 outline-slate-50 items-center p-3">
+                        <div class="aspect-[9/12] max-h-[450px] flex justify-center">
+                            <img src={book.data.cover} alt="" class="max-w-full max-h-full">
+                        </div>
+                        <p class="font-oskon text-base text-center md:text-3xl my-3">{book.data.title}</p>
                     </a>
                 </li>
             ))
         }
+        </ul>
 </Contents>

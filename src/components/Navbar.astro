@@ -13,12 +13,12 @@ export interface NavLink {
 const navLinks: NavLink[] = links.main
 ---
 
-<header class="max-w-full">
-    <div class="flex justify-between mx-auto max-w-screen-xl px-3 py-7">
+<header class="w-screen bg-transparent backdrop-blur fixed">
+    <div class="flex justify-between mx-auto max-w-screen-xl p-3 md:p-6">
         <a href="/#" class=" flex-1">
-            <span class="font-bold text-xl">Jane</span><span class="font-oskon text-xl"> / Digital Garden</span>
+            <span class="font-bold text-lg md:text-xl">Jane</span><span class="font-oskon text-lg md:text-xl"> / Digital Garden</span>
         </a>
-        <div class="flex flex-1 gap-3 content-center justify-center">
+        <div class="hidden md:flex flex-1 gap-3 content-center justify-center">
             {
                 navLinks?.map((link) => (
                     <a href={link.href} class="hover:underline">{link.title}</a>
@@ -35,5 +35,12 @@ const navLinks: NavLink[] = links.main
                 <ToggleTheme/>
             </div>
         </div>
+    </div>
+    <div class="flex px-3 pb-3 text-xs w-screen justify-between md:hidden">
+            {
+                navLinks?.map((link) => (
+                    <a href={link.href} class="hover:underline">{link.title}</a>
+                ))
+            }
     </div>
 </header>

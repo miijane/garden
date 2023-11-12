@@ -31,7 +31,7 @@
 }
 
 #container {
-  @apply max-w-screen-xl mx-auto p-3;
+  @apply max-w-screen-xl mx-auto p-3 md:p-6;
 }
 
 @font-face {

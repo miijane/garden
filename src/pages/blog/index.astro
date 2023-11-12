@@ -3,17 +3,17 @@ import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro"
 import Contents from "@layouts/Contents.astro";
 
-const posts = await getCollection('blog')
+// const posts = await getCollection('blog')
+        //    {
+                // posts?.map(post => (
+                //     <li>
+                //         <a href={`blog/${post.slug}`}>{post.data.title}</a>
+                //     </li>
+                // ))
+            // }
 ---
 
 <Contents title="BLOG", subtitle="">
         <ul>
-            {
-                posts.map(post => (
-                    <li>
-                        <a href={`blog/${post.slug}`}>{post.data.title}</a>
-                    </li>
-                ))
-            }
         </ul>
 </Contents>
