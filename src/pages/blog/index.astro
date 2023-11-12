@@ -1,9 +1,21 @@
 ---
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro"
+
+const posts = await getCollection('blog')
 ---
 
 <Base>
     <div class="container">
         Blog
+        <ul>
+            {
+                posts.map(post => (
+                    <li>
+                        <a href={`blog/${post.slug}`}>{post.data.title}</a>
+                    </li>
+                ))
+            }
+        </ul>
     </div>
 </Base>

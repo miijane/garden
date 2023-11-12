@@ -10,6 +10,8 @@ import "../styles/global.css"
     <Head title={garden.site.title}/>
     <body class="bg-slate-50 text-rust-grey dark:bg-rust-grey dark:text-willow-grey font-epiloge">
         <Navbar/>
-        <slot/>
+        <div id="container">
+            <slot/>
+        </div>
     </body>
 </html>

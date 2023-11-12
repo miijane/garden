@@ -30,7 +30,6 @@
   @apply stroke-zinc-200;
 }
 
-
-.container {
+#container {
   @apply max-w-screen-xl mx-auto p-3;
 }

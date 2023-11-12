@@ -1,9 +1,22 @@
 ---
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro"
+
+const books = await getCollection('library')
 ---
 
 <Base>
     <div class="container">
         Library
+
+        {
+            books.map(book => (
+                <li>
+                    <a href={book.slug}>
+                        {book.data.title}    
+                    </a>
+                </li>
+            ))
+        }
     </div>
 </Base>
