@@ -32,5 +32,5 @@
 
 
 .container {
-  @apply max-w-screen-xl;
+  @apply max-w-screen-xl mx-auto p-3;
 }
