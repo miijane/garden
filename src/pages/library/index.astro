@@ -1,14 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro"
+import Contents from "@layouts/Contents.astro";
 
 const books = await getCollection('library')
 ---
 
-<Base>
-    <div class="container">
-        Library
-
+<Contents title="LIBRARY">
         {
             books.map(book => (
                 <li>
@@ -18,5 +16,4 @@ const books = await getCollection('library')
                 </li>
             ))
         }
-    </div>
-</Base>
+</Contents>

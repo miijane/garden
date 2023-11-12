@@ -33,3 +33,8 @@
 #container {
   @apply max-w-screen-xl mx-auto p-3;
 }
+
+@font-face {
+  font-family: "Oskon";
+  src: url(../../public/assets/fonts/ZTBrosOskon90s-Regular.otf);
+}

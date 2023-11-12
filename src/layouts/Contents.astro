@@ -1,0 +1,11 @@
+---
+import Base from "./Base.astro";
+
+const { title, subtitle } = Astro.props
+---
+
+<Base>
+    <h1 class="font-oskon text-9xl mt-24 text-center">{title}</h1>
+    <h1 class="font-oskon text-3xl">{subtitle}</h1>
+    <slot />
+</Base>

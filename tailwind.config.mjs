@@ -8,7 +8,8 @@ export default {
 				'willow-grey': '#C8D5BB'
 			},
 			fontFamily: {
-				'epiloge': ['Epilogue', 'sans-serif']
+				'epiloge': ['Epilogue', 'sans-serif'],
+				'oskon': ['Oskon', 'sans-serif']
 			}
 		},
 	},

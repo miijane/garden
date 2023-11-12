@@ -1,13 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro"
+import Contents from "@layouts/Contents.astro";
 
 const posts = await getCollection('blog')
 ---
 
-<Base>
-    <div class="container">
-        Blog
+<Contents title="BLOG", subtitle="">
         <ul>
             {
                 posts.map(post => (
@@ -17,5 +16,4 @@ const posts = await getCollection('blog')
                 ))
             }
         </ul>
-    </div>
-</Base>
+</Contents>
